@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment5">
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.telegraph.ui.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_forgetpasswordnav"
+            app:destination="@id/forgetpasswordnav" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment5"
+            app:destination="@id/loginFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetpasswordnav"
+        android:name="com.example.telegraph.ui.Forgetpasswordnav"
+        android:label="fragment_forgetpasswordnav"
+        tools:layout="@layout/fragment_forgetpasswordnav" >
+        <action
+            android:id="@+id/action_forgetpasswordnav_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment5"
+        android:name="com.example.telegraph.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment5_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment5_to_usersFragment"
+            app:destination="@id/usersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat_Fragment"
+        android:name="com.example.telegraph.ui.Chat_Fragment"
+        android:label="fragment_chat_"
+        tools:layout="@layout/fragment_chat_" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_chat_Fragment_to_usersFragment3"
+            app:destination="@id/usersFragment" />
+        <argument
+            android:name="status"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_chat_Fragment_to_loginFragment5"
+            app:destination="@id/loginFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.example.telegraph.ui.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_usersFragment_to_chat_Fragment"
+            app:destination="@id/chat_Fragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_loginFragment5"
+            app:destination="@id/loginFragment5" />
+    </fragment>
+</navigation>

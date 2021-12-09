@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "364598183108",
+    "firebase_url": "https://telegraph-6823f-default-rtdb.firebaseio.com",
+    "project_id": "telegraph-6823f",
+    "storage_bucket": "telegraph-6823f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364598183108:android:375b74529e4e06490df591",
+        "android_client_info": {
+          "package_name": "com.example.telegraph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364598183108-vd22sus8pcr5s9u2726lrl2g0jalnd0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.telegraph",
+            "certificate_hash": "19e1e94a4a72eb8de84e2edd78a3cbcf74b35577"
+          }
+        },
+        {
+          "client_id": "364598183108-ldeklpmnqmenvs8uaa65tatdhvrv3jiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCtalHHdYTjmgO6fXDPHi5ZHD9upou__U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364598183108-ldeklpmnqmenvs8uaa65tatdhvrv3jiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
